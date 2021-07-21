@@ -16,14 +16,6 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 		private bool _fire;
 		private bool _crouch;
 
-		private void Awake()
-		{
-			if (!variableJoystick)
-			{
-				variableJoystick = FindObjectOfType<VariableJoystick>();
-			}
-		}
-
 		private void Start()
 		{
 			if (Camera.main == null)
@@ -50,6 +42,12 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 
 		private void FixedUpdate()
 		{
+			while (!variableJoystick)
+			{
+				variableJoystick = FindObjectOfType<VariableJoystick>();
+				return;
+			}
+			
 			// read user input: movement
 			float h = variableJoystick.Horizontal;
 			float v = variableJoystick.Vertical;

@@ -5,6 +5,8 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 	[RequireComponent(typeof(IBzThirdPerson))]
 	public sealed class BzThirdPersonControl : MonoBehaviour
 	{
+		public VariableJoystick variableJoystick;
+		
 		private IBzThirdPerson _character;
 		private IBzRagdoll _ragdoll;
 		private IBzDamageable _health;
@@ -40,8 +42,8 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 		private void FixedUpdate()
 		{
 			// read user input: movement
-			float h = Input.GetAxis("Horizontal");
-			float v = Input.GetAxis("Vertical");
+			float h = variableJoystick.Horizontal;
+			float v = variableJoystick.Vertical;
 			
 			// calculate move direction and magnitude to pass to character
 			Vector3 camForward = new Vector3(_camTransform.forward.x, 0, _camTransform.forward.z).normalized;

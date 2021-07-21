@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
@@ -14,6 +15,14 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 		private bool _jumpPressed;
 		private bool _fire;
 		private bool _crouch;
+
+		private void Awake()
+		{
+			if (!variableJoystick)
+			{
+				variableJoystick = FindObjectOfType<VariableJoystick>();
+			}
+		}
 
 		private void Start()
 		{

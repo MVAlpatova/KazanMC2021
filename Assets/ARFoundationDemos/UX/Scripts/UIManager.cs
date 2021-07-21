@@ -17,6 +17,8 @@ public struct UXHandle
 
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] private GameObject joystick;
+    
     [SerializeField]
     bool m_StartWithInstructionalUI = true;
 
@@ -182,6 +184,11 @@ public class UIManager : MonoBehaviour
     {
         get => m_LocalizationManager;
         set => m_LocalizationManager = value;
+    }
+
+    private void Awake()
+    {
+        joystick.SetActive(false);
     }
 
     void OnEnable()
@@ -389,6 +396,7 @@ public class UIManager : MonoBehaviour
         if (m_PlacedObject)
         {
             m_PlacedObject = false;
+            joystick.SetActive(true);
             return true;
         }
         return m_PlacedObject;

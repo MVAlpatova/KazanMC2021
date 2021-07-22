@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -39,6 +40,9 @@ public class PlaceObjectsOnPlane : MonoBehaviour
 
     int m_NumberOfPlacedObjects = 0;
 
+    [SerializeField]
+    Transform shadowPlane;
+
     void Awake()
     {
         m_RaycastManager = GetComponent<ARRaycastManager>();
@@ -66,7 +70,9 @@ public class PlaceObjectsOnPlane : MonoBehaviour
                     {
                         spawnedObject.transform.SetPositionAndRotation(hitPose.position, hitPose.rotation);
                     }
-                    
+
+                    shadowPlane.position = hitPose.position + Vector3.down * 0.001f;
+
                     if (onPlacedObject != null)
                     {
                         onPlacedObject();

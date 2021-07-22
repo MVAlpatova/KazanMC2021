@@ -131,6 +131,8 @@ public class UIManager : MonoBehaviour
         set => m_PlaneManager = value;
     }
 
+    [SerializeField] ARPointCloudManager m_PointCloudManager;
+
     [SerializeField]
     ARFaceManager m_FaceManager;
     public ARFaceManager faceManager
@@ -389,6 +391,7 @@ public class UIManager : MonoBehaviour
         if (m_PlacedObject)
         {
             m_PlacedObject = false;
+            ClearTrackables();
             return true;
         }
         return m_PlacedObject;
@@ -402,6 +405,22 @@ public class UIManager : MonoBehaviour
     public void TestFlipPlacementBool()
     {
         m_PlacedObject = true;
+    }
+
+    private void ClearTrackables()
+    {
+        m_PointCloudManager.enabled = false;
+        m_PlaneManager.enabled = false;
+
+        foreach (var trackable in m_PointCloudManager.trackables)
+        {
+            Destroy(trackable.gameObject);
+        }
+
+        foreach (var trackable in m_PlaneManager.trackables)
+        {
+            Destroy(trackable.gameObject);
+        }
     }
 }
 

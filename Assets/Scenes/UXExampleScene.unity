@@ -644,8 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446fc7fee4cf2ad4daa02222a84869c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlacedPrefab: {fileID: 8347713745040812413, guid: efc54764588bb134d84ce3dc284ebb6e,
-    type: 3}
+  m_PlacedPrefab: {fileID: 139954, guid: 3314232fe58ae954d95689bfd6de24a3, type: 3}
   m_MaxNumberOfObjectsToPlace: 1
   shadowPlane: {fileID: 1970367821}
 --- !u!114 &1806186599

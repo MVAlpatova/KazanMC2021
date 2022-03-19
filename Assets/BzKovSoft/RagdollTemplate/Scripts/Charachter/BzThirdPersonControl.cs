@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
@@ -41,6 +42,12 @@ namespace BzKovSoft.RagdollTemplate.Scripts.Charachter
 
 		private void FixedUpdate()
 		{
+			if (variableJoystick == null)
+			{
+				variableJoystick = FindObjectOfType<VariableJoystick>();
+				return;
+			}
+			
 			// read user input: movement
 			float h = variableJoystick.Horizontal;
 			float v = variableJoystick.Vertical;

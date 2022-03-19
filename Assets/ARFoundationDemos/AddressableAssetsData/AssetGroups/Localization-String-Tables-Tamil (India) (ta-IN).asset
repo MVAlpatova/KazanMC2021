@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-Assets-Shared
+  m_Name: Localization-String-Tables-Tamil (India) (ta-IN)
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-Assets-Shared
+  m_GroupName: Localization-String-Tables-Tamil (India) (ta-IN)
   m_Data:
     m_SerializedData: []
-  m_GUID: 36f3d4c29372c45bc94ac071b548d087
+  m_GUID: 7635cbf6777964db4be885d6fafcbb85
   m_SerializeEntries:
-  - m_GUID: 4b685a2129bdd4b99847d9871d566acc
-    m_Address: ReasonsUX Shared Data
+  - m_GUID: 390d2b8c250c64d56bb4acf7279d8827
+    m_Address: ReasonsUX_ta-IN
     m_ReadOnly: 1
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Locale-ta-IN
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 78bdf713d65ad406e94552981323526a, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 8ce9a0691fb104d94bab90fb171c0245, type: 2}
-    - {fileID: 11400000, guid: 1a2339086e60d4d0cbe8d39ffbce6dc0, type: 2}
+    - {fileID: 11400000, guid: bf8a01dd590f842e9988a3b9b45310a1, type: 2}
+    - {fileID: 11400000, guid: 29f3d9a74c0fa4140a983744813c5355, type: 2}

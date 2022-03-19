@@ -7,11 +7,11 @@
       "dependencies": {}
     },
     "com.unity.addressables": {
-      "version": "1.18.11",
+      "version": "1.19.11",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.scriptablebuildpipeline": "1.19.1",
+        "com.unity.scriptablebuildpipeline": "1.19.3",
         "com.unity.modules.assetbundle": "1.0.0",
         "com.unity.modules.imageconversion": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
@@ -27,13 +27,6 @@
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "2.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.device-simulator": {
-      "version": "3.0.1-preview",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.editorcoroutines": {
@@ -93,7 +86,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.scriptablebuildpipeline": {
-      "version": "1.19.1",
+      "version": "1.19.3",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
@@ -109,7 +102,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.24",
+      "version": "1.1.29",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -182,16 +175,17 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arsubsystems": {
-      "version": "4.1.7",
+      "version": "4.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.subsystemregistration": "1.1.0"
+        "com.unity.subsystemregistration": "1.1.0",
+        "com.unity.xr.management": "4.0.1"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.7",
+      "version": "2.1.8",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -201,7 +195,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "4.0.1",
+      "version": "4.2.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
